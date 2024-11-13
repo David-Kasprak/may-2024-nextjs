@@ -1,0 +1,20 @@
+import React from 'react';
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: 'PostLayout metadata'
+}
+
+type Props = {children: React.ReactNode}
+
+const PostLayout = ({children}: Props) => {
+    return (
+        <>
+            PostLayout
+            {children}
+            PostLayout
+        </>
+    );
+};
+
+export default PostLayout;
