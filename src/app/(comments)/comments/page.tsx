@@ -1,9 +1,12 @@
 import React from 'react';
+import CommentsComponent from "@/app/components/comments/CommentsComponent";
 
-const CommentsPage = () => {
+const CommentsPage = async () => {
+    const comments = await fetch('https://jsonplaceholder.typicode.com/comments')
+        .then(value => value.json());
     return (
         <div>
-            CommentsPage
+            <CommentsComponent comments={comments}/>
         </div>
     );
 };

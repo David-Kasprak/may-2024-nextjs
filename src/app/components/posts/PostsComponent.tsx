@@ -8,9 +8,10 @@ type Props = {
 const PostsComponent:FC<Props> = ({posts}) => {
     return (
         <div>
-            {posts.map(({id, title}) => (<div key={id}>
+            {posts.map(({id, title}) => (
+                <div key={id}>
                 <Link href={'posts/' + id}>{title}</Link>
-            </div>))}
+                </div>))}
         </div>
     );
 };
