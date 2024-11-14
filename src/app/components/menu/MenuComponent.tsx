@@ -9,13 +9,13 @@ const MenuComponent = () => {
                     <Link href={'/'}>Home Page</Link>
                 </li>
                 <li>
-                    <Link href={'users'}>Users Page</Link>
+                    <Link href={'/users'}>Users Page</Link>
                 </li>
                 <li>
-                    <Link href={'posts'}>Posts Page</Link>
+                    <Link href={'/posts'}>Posts Page</Link>
                 </li>
                 <li>
-                    <Link href={'comments'}>Comments Page</Link>
+                    <Link href={'/comments'}>Comments Page</Link>
                 </li>
             </ul>
         </div>
